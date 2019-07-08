@@ -1,0 +1,7 @@
+<h2>Vulnarabilities</h2>
+<ul>
+  <li *ngFor="let vulnarability of vulnarabilities">
+  <span class="badge">{{vulnarability.id}}</span> {{vulnarability.name}}
+    <button (click)="deleteVulnarability(vulnarability.name)"> delete </button>
+  </li>
+</ul>
